@@ -1,0 +1,30 @@
+{
+  "name": "@rbxts/baseplate",
+  "version": "1.0.0",
+  "description": "Quick, make a baseplate!",
+  "main": "out/init.lua",
+  "scripts": {
+    "prepublishOnly": "rbxtsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osyrisrblx/rbxts-baseplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osyrisrblx/rbxts-baseplate/issues"
+  },
+  "homepage": "https://github.com/osyrisrblx/rbxts-baseplate#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "out/index.d.ts",
+  "devDependencies": {
+    "@rbxts/types": "^1.0.320"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.0.3"
+  }
+}
