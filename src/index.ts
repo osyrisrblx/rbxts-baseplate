@@ -11,6 +11,7 @@ export function createBaseplate(settings?: Partial<Part>) {
 	baseplate.LeftSurface = Enum.SurfaceType.Universal;
 	baseplate.RightSurface = Enum.SurfaceType.Universal;
 	baseplate.TopSurface = Enum.SurfaceType.Universal;
+	baseplate.Parent = Workspace
 	Object.assign(baseplate, settings);
 	return baseplate;
 }
