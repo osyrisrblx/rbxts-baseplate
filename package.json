@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/baseplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quick, make a baseplate!",
   "main": "out/init.lua",
   "scripts": {
