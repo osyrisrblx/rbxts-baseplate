@@ -26,5 +26,8 @@
   },
   "dependencies": {
     "@rbxts/services": "^1.0.3"
-  }
+  },
+  "files": [
+    "out"
+  ]
 }
