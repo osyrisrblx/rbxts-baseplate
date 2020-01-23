@@ -28,6 +28,7 @@
     "@rbxts/services": "^1.0.3"
   },
   "files": [
+    "README.md",
     "out"
   ]
 }
