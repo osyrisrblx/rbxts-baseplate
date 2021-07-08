@@ -1,5 +1,3 @@
-import { Workspace } from "@rbxts/services";
-
 const DEFAULT_PROPERTIES: Partial<BasePart> = {
 	Anchored: true,
 	Position: new Vector3(0, -0.5, 0),
@@ -10,9 +8,20 @@ const DEFAULT_PROPERTIES: Partial<BasePart> = {
 	LeftSurface: Enum.SurfaceType.Universal,
 	RightSurface: Enum.SurfaceType.Universal,
 	TopSurface: Enum.SurfaceType.Universal,
-	Parent: Workspace,
+	Parent: game.GetService("Workspace"),
 };
 
+function apply<T>(object: T, props: Partial<T>) {
+	for (const [key, value] of pairs(props)) {
+		object[key as never] = value as never;
+	}
+}
+
 export function createBaseplate(settings?: Partial<Part>) {
-	return Object.assign(new Instance("Part"), DEFAULT_PROPERTIES, settings);
+	const part = new Instance("Part");
+	apply(part, DEFAULT_PROPERTIES);
+	if (settings) {
+		apply(part, settings);
+	}
+	return part;
 }

@@ -8,6 +8,7 @@
 		"noLib": true,
 		"strict": true,
 		"target": "es6",
+		"moduleResolution": "Node",
 		"typeRoots": [ "node_modules/@rbxts" ],
 
 		// required, configurable
